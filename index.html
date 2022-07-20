@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <link rel="stylesheet" href="web/css/style.css" type="text/css">
+        <link rel="stylesheet" href="lbrs/bootstrap/css/bootstrap.min.css" type="text/css">
+        <script src="lbrs/bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        
+    </head>
+    <body>
+        <div class="container col-6 d-flex justify-content-center align-items-center" style="height: 40rem">
+            <div class="card-body" style="height: 30rem">
+                <form class="form-control p-4">
+                    
+                    <h1 class="card-title fw-bold mb-2">Formulario</h1>
+                    
+                    <div class="form-outline mb-4">
+                        <label class="form-label" id="empleado"><h4>Empleado</h4></label>
+                        <input class="form-control" id="empleado_" type="text" maxlength="20" placeholder="Jalexys">
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" id="cargo"><h4>Cargo</h4></label>
+                        <input class="form-control" id="cargo_" type="text" maxlength="40" placeholder="Programador">
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" id="valor_h"><h4>Valor/hora</h4></label>
+                        <input class="form-control" id="valor_h_" type="number" placeholder="4">
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" id="num_h"><h4>N/hora</h4></label>
+                        <input class="form-control" id="num_h_" type="number" placeholder="8">
+                    </div>
+                    <div class="form-outline mb-4">
+                        <label class="form-label" id="descrip"><h4>Descripcion</h4></label>
+                        <input class="form-control" id="descrip_" type="text" placeholder="escriba una descripcion">
+                    </div>
+
+                    <div class="form-outline mt-5"><button class="btn btn-outline-success btn-block container-fluid fw-bold" id="datos_" onclick="cargar_datos()">Enviar Datos</button></div>
+                </form>
+            </div>
+        </div>
+        <script src="js/cargar.js"></script>
+    </body>
+</html>
